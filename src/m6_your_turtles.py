@@ -42,7 +42,7 @@ mo.speed = 50
 
 size = 500
 
-for k in range(50) :
+for k in range(45) :
     tully.draw_circle(size)
     tully.left(92)
     tully.forward(k)
@@ -52,14 +52,35 @@ for k in range(50) :
     mo.forward(size * 0.5)
     mo.left(92)
 
-tully.pen = rg.Pen('midnight blue',5)
 mo.pen = rg.Pen('purple',5)
+mo.speed = 100
+mo.pen_up()
+mo.forward(200)
+mo.right(90)
+mo.backward(125)
+mo.right(90)
+mo.forward(75)
+mo.left(90)
+mo.left(90)
+mo.pen_down()
 
-for k in range (50) :
+for k in range (100) :
     mo.forward(size * 0.5)
     mo.backward(size)
     mo.left(92)
 
+rebecca = rg.SimpleTurtle('turtle')
+rebecca.pen = rg.Pen('midnight blue',2)
+rebecca.pen_up()
+rebecca.right(120*0.5)
+rebecca.pen_down()
+rebecca.speed = 500
+
+for k in range(50):
+    for k in range(3):
+        rebecca.forward(150)
+        rebecca.left(120)
+    rebecca.right(92)
 
 
 window.close_on_mouse_click()
