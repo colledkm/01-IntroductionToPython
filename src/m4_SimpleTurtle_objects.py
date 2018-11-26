@@ -162,6 +162,7 @@ boris.forward(300)
 ###############################################################################
 tully = rg.SimpleTurtle('turtle')
 tully.pen = rg.Pen('green', 10)
+tully.speed = 2
 tully.forward(400)
 tully.left(180)
 tully.forward(200)
